@@ -1,24 +1,36 @@
-<div class="container-fluid bg-dark text-light">
+<div class="container-fluid bg-light text-dark text-center mt-4 p-2">
+
     <div class="row">
-        <div class="col-sm-12 col-md-4 p-5 text-center">
-            <h2>QUELQUES LIENS</h2>
-            <div class="dropdown-divider bg-light"></div>
-            <p><a href="index.php?page=home" class="text-light">Accueil</a></p>
-            <p><a href="index.php?page=posts" class="text-light">spectacles</a></p>
-            <!-- <p><a href="index.php?page=contact" class="text-light">Contact</a></p> -->
-        </div>
-        <div class="col-sm-12 col-md-4 p-5 text-center">
-            <p class="text-center">
-                <img src="assets/img/logo.png" alt="logo Blog" class="w-100">
-            </p>
-        </div>
-        <div class="col-sm-12 col-md-4 p-5 text-center">
-            <h2>COORDONNÉES</h2>
-            <div class="dropdown-divider bg-light"></div>
-            <p>12 rue Pascal</p>
-            <p>91560 Crosne</p>
-            <p>07 71 13 ** **</p>
-            <p>florian97pelle@gmail.com</p>
+        <div class="col-md-10 offset-md-1">
+            <h2>Contactez-nous</h2>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <p><i class="bi bi-envelope"></i> tousauspectacle@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <p><i class="bi bi-telephone-fill"></i> 01 32 54 76 98</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <h2>Rejoignez-nous</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 offset-md-1">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-snapchat"></i>
+        </div>
+    </div>
+
 </div>

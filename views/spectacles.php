@@ -11,7 +11,7 @@
             <table class="table table-bordered table-dark">
                 <thead>
                     <tr>
-                    <th>N°</th>
+                    <th>id</th>
                     <th>photo</th>
                     <th>nom_salle</th>
                     <th>nombre_place</th>
