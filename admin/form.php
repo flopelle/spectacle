@@ -15,6 +15,7 @@
     <body>
 
         <form> 
+        <form action="treatment.php" method="post" enctype="multipart/form-data">
             <label for="photo">photo</label>
             <input type="file" name="img" accept="image/png, image/jpg, image/jpeg, image/jp2, image/webp" required>
             <br>
@@ -48,13 +49,13 @@
             <br>
 
             <label for="lien">lien</label>
-            <input type="url" name="lien" required><br>
+            <input type="url" name="lien"><br>
 
             </select>
             <br>
 
             <input type="submit" value="Ajouter">
-
+            
 
 
         </form>

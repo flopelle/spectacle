@@ -1,7 +1,7 @@
 <?php
 $id = (int)$_GET['article'];
 $req = $db->query('SELECT * FROM spectacle WHERE id=' . $id);
-$post = $req->fetch();
+$spectacle = $req->fetch();
 ?>
 
 <div class="container my-3">

@@ -12,16 +12,9 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Accueil</a>
           </li>
-         
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Spectacles
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Concerts</a></li>
-              <li><a class="dropdown-item" href="#">Ballets</a></li>
-              <li><a class="dropdown-item" href="#">Cirque</a></li>
-            </ul>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Spectacles</a>
+          </li>
           </li>
            <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>

@@ -27,7 +27,7 @@
                 <tbody>
                     <?php
                     $i = 0;
-                        foreach ($posts  as $post){ ?>
+                        foreach ($sposts  as $post){ ?>
                             <tr>
                                 <td>
                                     <?= $i   ?> 
