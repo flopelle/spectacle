@@ -14,10 +14,9 @@
 
     <body>
 
-        <form> 
         <form action="treatment.php" method="post" enctype="multipart/form-data">
             <label for="photo">photo</label>
-            <input type="file" name="img" accept="image/png, image/jpg, image/jpeg, image/jp2, image/webp" required>
+            <input type="file" name="photo" accept="image/png, image/jpg, image/jpeg, image/jp2, image/webp" required>
             <br>
 
             <label for="nom_salle">nom de la salle</label>
@@ -25,7 +24,7 @@
             <br>
 
             <label for="nombre_place">nombre de place</label>
-            <input type="number" name="nombre_place" maxlength="5" required>
+            <input type="number" name="nombre_place" min="0" max="999999" required>
             <br>
 
             <label for="description">description</label>
@@ -37,11 +36,11 @@
             <br>
 
             <label for="prix">Prix (€)</label>
-            <input type="number" name="price" min="0" max="999,99" required>
+            <input type="number" name="price" min="0" max="999.99" step="0.01" required>
             <br>
 
             <label for="date_spectacle">date</label>
-            <input type="date" name="date_spectacle" required>
+            <input type="datetime-local" name="date_spectacle" required>
             <br>
 
             <label for="artiste">artiste</label>
@@ -51,16 +50,9 @@
             <label for="lien">lien</label>
             <input type="url" name="lien"><br>
 
-            </select>
-            <br>
-
             <input type="submit" value="Ajouter">
             
-
-
         </form>
-
-
 
     </body>
 
