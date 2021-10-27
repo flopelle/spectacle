@@ -16,7 +16,7 @@
 
         <title>espace administrateur</title>
 
-        <link rel="stylesheet" href="../assets/css/fontawesome.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
 
     </head>
 
@@ -31,12 +31,12 @@
                     <th>photo</th>
                     <th>nom_salle</th>
                     <th>nombre_place</th>
-                    <th>description</th>
                     <th>nom_spectacle</th>
                     <th>prix</th>
                     <th>date_spectacle</th>
                     <th>artiste</th>
                     <th>lien</th>
+                    <th>actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -47,7 +47,6 @@
                             <td><?= $post['photo'] ?></td>
                             <td><?= $post['nom_salle'] ?></td>
                             <td><?= $post['nombre_place'] ?></td>
-                            <td><?= $post['description'] ?></td>
                             <td><?= $post['nom_spectacle'] ?></td>
                             <td><?= $post['prix'] ?></td>
                             <td><?= $post['date_spectacle'] ?></td>

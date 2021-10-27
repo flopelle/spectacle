@@ -18,9 +18,9 @@
         foreach ($posts as $post) { ?>
             <div class="col-sm-12 col-md-4 p-3 ">
             <div class="card" >
-                <img src="assets/img/posts/<?= $post['photo'] ?>" class="card-img-top  w-25 ">
+                <img src="../assets/img/<?= $post['photo'] ?>" class="card-img-top  w-25 ">
                 <div class="card-body">
-                    <h5 class="card-title"><?= $post['titre'] ?></h5>
+                    <h5 class="card-title"><?= $post['nom_spectacle'] ?></h5>
                     <p class="card-text"><?= substr($post['description'],0,100). '...' ?></p>
                     <a href="index.php?page=post&article=<?= $post ['id'] ?>" class="btn btn-secondary">Lire plus</a>
                 </div>

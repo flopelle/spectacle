@@ -47,11 +47,11 @@ if(empty($nom_spectacle) || strlen($nom_spectacle) > 100){
 }
 
 if(empty($artiste) || strlen($artiste) > 50){
-    $errorMessage .= '<p>- le champ "nom_spectacle" est obligatoire et doit comporter moins de 100 caractères.</p>';
+    $errorMessage .= '<p>- le champ "artiste" est obligatoire et doit comporter moins de 50 caractères.</p>';
     $valid = false;//verification de l'artiste
 }
-if(empty($lien) || strlen($lien) > 255){
-    $errorMessage .= '<p>- le champ "nom_spectacle" est obligatoire et doit comporter moins de 255 caractères.</p>';
+if(($lien) || strlen($lien) > 255){
+    $errorMessage .= '<p>- le champ "lien" doit comporter moins de 255 caractères.</p>';
     $valid = false;//verification du lien
 }
 // vérification de l'image
@@ -78,8 +78,8 @@ if ($valid === true) {
     $req->bindParam(':nombre_place', $nombre_place, PDO::PARAM_STR);
     $req->bindParam(':description', $description, PDO::PARAM_STR);
     $req->bindParam(':date_spectacle', $date_spectacle, PDO::PARAM_STR);
-    $req->bindParam(':nom_spectacle', $nom_spectacle, PDO::PARAM_INT);
-    $req->bindParam(':prix', $prix, PDO::PARAM_STR);
+    $req->bindParam(':nom_spectacle', $nom_spectacle, PDO::PARAM_STR);
+    $req->bindParam(':prix', $prix, PDO::PARAM_INT);
     $req->bindParam(':artiste', $artiste, PDO::PARAM_STR);
     $req->bindParam(':lien', $lien, PDO::PARAM_STR);
     $req->bindParam(':photo', $imgName, PDO::PARAM_STR);
@@ -107,8 +107,8 @@ if ($valid === true) {
     $id = (int)$_GET['delete'];
     $req = $db->query('SELECT photo FROM spectacle WHERE id=' . $id); // récupère le nom de l'image
     $oldImg = $req->fetch();
-    if (file_exists('../assets/images/' . $oldImg['img'])) { // vérifie que le fichier existe
-        unlink('../assets/images/' . $oldImg['img']); // supprime l'image du dossier local
+    if (file_exists('../assets/img/' . $oldImg['img'])) { // vérifie que le fichier existe
+        unlink('../assets/img/' . $oldImg['img']); // supprime l'image du dossier local
     }
     $reqDelete = $db->query('DELETE FROM spectacle WHERE id=' . $id); // supprime les données en bdd
     $_SESSION['notification'] = 'le spectacle a été bien supprimé';

@@ -1,25 +1,52 @@
-<?php
-$id = (int)$_GET['article'];
-$req = $db->query('SELECT * FROM spectacle WHERE id=' . $id);
-$spectacle = $req->fetch();
-?>
-
 <div class="container my-3">
-   <div class="row">
-      <div class="col-12">
-         <h1><?= $post['titre'] ?> </h1>
-         <h3><?= $post['adresse'] ?> </h3>
-      </div>
 
-      <div class="col-sm-12 col-md-6 offset-md-3 col-lg-4 offset-leg-3 my-3">
-         <img src="assets/img/posts/<?= $post['photo'] ?>"  class="w-75">
+<h1>Spectacles</h1>
 
-      </div>
+<div class="row">
+    <div class="col-12">
+        <?php
+            $req = $db->query('SELECT * FROM spectacle ORDER BY id DESC');
+            $posts = $req->fetchALL();
 
-      <div class="col-12">
-         <p>
-            <?= $post['description'] ?>
-         </p>
-      </div>
-   </div>
+        ?>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Titre</th>
+                    <th>Description</th>
+                    <th>Photo</th>
+                    <th>Date</th>
+                    <th>Artiste</th>
+                    <th>Lien</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                     $i = 1;
+                    foreach ($posts as $post) {?>
+                       <tr>
+                           <td><?= $i ?></td>
+                           <td><?= $post['nom_spectacle'] ?></td>
+                           <td><?= substr($post['description'], 0, 200) ?></td>
+                           <td><img src="../assets/img/ <?= $post['photo'] ?>"></td>
+                           <td><?= $post['date_spectacle'] ?></td>
+                           <td><?= $post['artiste'] ?></td>
+                           <td><a href="index.php?page=post&article=<?= $post['id'] ?>"><i class="bi bi-eye-fill"></i></a></td>
+
+
+                       </tr>
+
+                    <?php 
+                      $i++;
+                    
+                }
+                ?>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
 </div>
