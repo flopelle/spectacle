@@ -87,7 +87,7 @@ if ($valid === true) {
     if (!file_exists('../assets/img/')) { // vérifie si le dossier "photos" existe
         mkdir('photos/'); // crée le dossier "photos"
     }
-    move_uploaded_file($_FILES['photo']['tmp_name'], '../assets/img' . $imgName);
+    move_uploaded_file($_FILES['photo']['tmp_name'], '../assets/img/' . $imgName);
     $_SESSION['notification'] = 'le spectacle a bien été ajouté';
     header('Location: index.php'); // redirection
 } else {

@@ -3,7 +3,13 @@
     <h1>Accueil</h1>
 
     <div class="row">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ad excepturi deserunt aliquam quasi exercitationem possimus praesentium placeat, amet vero explicabo nesciunt consectetur numquam nulla veniam harum beatae. Quaerat, aperiam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sit aliquam esse harum ullam. Animi enim, non et minima, optio iusto, sed ipsa eum culpa incidunt est id similique cumque.</p>
+        <p>Découvrez les prochains spectacles à venir ! 
+            Entrez dans l’univers hypnotique de Messmer, admirez la magie des spectacles et laissez-vous bluffer par des numéros de mentalisme ou d’illusionnisme. 
+            Vous aimez les paillettes, le sensationnel et les feux des projecteurs ? 
+            Découvrez les grands spectacles qui vont marquer la saison ! 
+            Retrouvez les spectacles les plus époustouflants du moment et vivez des soirées inoubliables. 
+            Les paillettes et le glamour du Lido et du Crazy Horse, la fantaisie du Cabaret Michou ou encore les coulisses du Moulin Rouge sont à découvrir sans plus attendre ! 
+            Grâce à cette sélection spectaculaire, entrez dans un univers de poésie, de rêves et de magie où les artistes se surpassent pour vous éblouir ! </p>
     </div>
 
     <div class="row">
@@ -18,7 +24,7 @@
         foreach ($posts as $post) { ?>
             <div class="col-sm-12 col-md-4 p-3 ">
             <div class="card" >
-                <img src="../assets/img/<?= $post['photo'] ?>" class="card-img-top  w-25 ">
+                <img src="assets/img/<?= $post['photo'] ?>" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title"><?= $post['nom_spectacle'] ?></h5>
                     <p class="card-text"><?= substr($post['description'],0,100). '...' ?></p>

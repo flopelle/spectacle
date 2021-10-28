@@ -17,6 +17,7 @@
                     <th>Description</th>
                     <th>Photo</th>
                     <th>Date</th>
+                    <th>Prix</th>
                     <th>Artiste</th>
                     <th>Lien</th>
                 </tr>
@@ -29,8 +30,9 @@
                            <td><?= $i ?></td>
                            <td><?= $post['nom_spectacle'] ?></td>
                            <td><?= substr($post['description'], 0, 200) ?></td>
-                           <td><img src="../assets/img/ <?= $post['photo'] ?>"></td>
+                           <td><img src="assets/img/<?= $post['photo']?>" ></td>
                            <td><?= $post['date_spectacle'] ?></td>
+                           <td><?= $post['prix'] ?></td>
                            <td><?= $post['artiste'] ?></td>
                            <td><a href="index.php?page=post&article=<?= $post['id'] ?>"><i class="bi bi-eye-fill"></i></a></td>
 
