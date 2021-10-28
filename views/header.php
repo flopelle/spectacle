@@ -10,10 +10,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link" aria-current="page" href="http://localhost:8888/DWWM13/spectacle/index.php">Accueil</a>
           </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">Spectacles</a>
+            <a class="nav-link" href="http://localhost:8888/DWWM13/spectacle/index.php?page=posts">Spectacles</a>
           </li>
           </li>
            <li class="nav-item">
